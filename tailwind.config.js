@@ -4,23 +4,34 @@ module.exports = {
   mode: 'jit',
   content: ["./src/**/*.{js, jsx, ts, tsx}"],
   theme: {
+    borderRadius: {
+      'large': '30px',
+      "full": "999px"
+    },
     fontSize: {
-      'sm': ['15px', '18.9px'],
-      'base': ['16px', '20.16px'],
-      'xl': ['18px', "26px"],
-      '2xl': ['22px', "27.72px"],
+      "xsm": "14px",
+      'sm': '15px',
+      'base': '16px',
+      'xl': "24px",
+      '2xl': '28px'
     },
     extend: {
       colors: {
-        "main-blue": "#0D192C",
-        "main-blue2": "#15263F",
-        "main-text": "#8BACD9",
-        "main-light": "#00FFF8",
+        "main-orange": "#FC7614",
+        "main-gray1": "#181E27",
+        "main-gray2": "#232A34",
+        "main-very-dark-blue": "#131518",
+        "main-dark-blue": "#262E38",
+        "main-gray-light": "#969FAD",
+        "main-gray-medium": "#7C8798",
       },
       screens: {
         'sm400': '400px',
         "lg1300": "1300px"
       },
+      letterSpacing: {
+        'wide': '2px',
+      }
     },
   },
   plugins: [],
