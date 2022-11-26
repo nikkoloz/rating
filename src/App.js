@@ -24,7 +24,6 @@ function App() {
 
       {(data.length !== 0 && data.length > tryGuess) ?
         <>
-          {console.log("test")}
           <div style={{ background: data[tryGuess].color }} className={`w-[100px] h-[100px]`}></div>
           {data[tryGuess].answers.map((answ) => {
             return <button key={answ} className="mx-4" onClick={() => {
